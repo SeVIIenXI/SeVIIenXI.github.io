@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Ja">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>金田ゼミHP</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <div class="container">
+                    <div class="box">学習院大学　金田ゼミ</div>
+                    <div class="box_top"><a  href="index.html">ホーム</a></div>
+                    <div class="box_top"><a  href="professor.html">教授紹介</a></div>
+                    <div class="box_top"><a  href="intro.html">ゼミ紹介</a></div>
+                    <div class="box_top"><a  href="photo.html">アルバム</a></div>
+                    <div class="box_top"><a  href="virtual.html">バーチャル投資</a></div>
+                </div>
+                
+            </div>
+        </header>
+
+        <div class="sec_div">
+            <img src="Img/sakuma_vg_03_01.jpg" class="img">       
+        </div>
+
+        
+       <div class="main_div">
+
+        <section id="gallery" style="padding: 20px;">
+          <h2 style="text-align: center;">授業の様子</h2>
+          <div class="gallery">
+              <img src="Img/class_1.jpg" alt="图片1">
+              <img src="Img/class_2.jpg" alt="图片2">
+          </div>
+        </section>
+
+
+        <section id="gallery" style="padding: 20px;">
+            <h2 style="text-align: center;">集合写真</h2>
+            <div class="gallery">
+                <img src="Img/group_1.jpg" alt="图片1">
+                <img src="Img/group_2.jpg" alt="图片1">
+            </div>
+          </section>
+
+        <section id="gallery" style="padding: 20px;">
+          <h2 style="text-align: center;">合宿</h2>
+          <div class="gallery">
+              <img src="Img/camp_1.jpg" alt="图片1">
+              <img src="Img/camp_2.jpg" alt="图片1">
+          </div>
+        </section>
+
+
+          
+        <section id="gallery" style="padding: 20px;">
+            <h2 style="text-align: center;">Man</h2>
+            <div class="gallery">
+                <img src="Img/man_1.jpg" alt="图片1">
+                <img src="Img/man_1.jpg" alt="图片1">
+                <img src="Img/man_1.jpg" alt="图片1">
+                <img src="Img/man_1.jpg" alt="图片1">
+                <img src="Img/man_1.jpg" alt="图片1">
+                <img src="Img/man_1.jpg" alt="图片1">
+
+            </div>
+          </section>
+
+
+       </div>
+        
+
+<!-- 模态框 -->
+<div class="modal" id="imageModal">
+  <span class="close" id="modalClose">&times;</span>
+  <img id="modalImage" src="" alt="大图">
+</div>
+
+
+ 
+        <footer>
+          <p>&copy; 2025 Kaneda_zemi</p>
+        </footer>
+
+
+        <script>
+          // 获取相册图片和模态框元素
+          const images = document.querySelectorAll('.gallery img');
+          const modal = document.getElementById('imageModal');
+          const modalImage = document.getElementById('modalImage');
+          const modalClose = document.getElementById('modalClose');
+      
+          // 点击图片显示模态框
+          images.forEach(image => {
+              image.addEventListener('click', () => {
+                  modalImage.src = image.src;
+                  modal.style.display = 'flex';
+              });
+          });
+      
+          // 点击关闭按钮关闭模态框
+          modalClose.addEventListener('click', () => {
+              modal.style.display = 'none';
+          });
+      
+          // 点击模态框外部关闭模态框
+          modal.addEventListener('click', (event) => {
+              if (event.target === modal) {
+                  modal.style.display = 'none';
+              }
+          });
+      </script>
+    </body>
+</html>
