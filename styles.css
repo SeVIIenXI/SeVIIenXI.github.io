@@ -4,10 +4,8 @@ body {
     background-color: #f5f5f5;
     justify-content: center;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-
-
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 header {
