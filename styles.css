@@ -10,12 +10,6 @@ body {
 
 }
 
-@media (min-width: 720px) {
-    
-
- }
-
-
 header {
     padding: 10px 10px;
     background-color: #ffffff;
@@ -43,7 +37,7 @@ header {
 }
 
 .box_left {
-    width: 20%;
+    width: 22%;
     height: 30px;
     color: #DB7093;
     display: flex;
@@ -67,7 +61,7 @@ header {
 .box_right{
     display: flex; 
     flex-direction: row;
-    width: 80%;
+    width: 78%;
     gap: 20px;
 
 }
