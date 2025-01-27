@@ -11,24 +11,20 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff; 
+    padding: 10px 10px;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
-    position:sticky;
     top: 0;
-    z-index: 1000;
     height: 80px;
 }
 
 .container {
     display: flex; 
-    justify-content: flex-start; 
+    justify-content: space-between; 
+    flex-direction: row;
     margin-bottom: 10px;
     margin-top: 30px;
-
+    position: relative;
 }
 
 .container_bot {
@@ -38,31 +34,35 @@ header {
     margin-top: 30px;
     margin-left: 10%;
     margin-right: 10%;
-
-
 }
 
-.box {
-    width: 300px;
+.box_left {
+    width: 20%;
     height: 30px;
-    background-color: #ffffff;
     color: #DB7093;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .box_top {
-    width: 200px;
     height: 30px;
-    background-color: #ffffff;
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     border-left:1px solid black;
-    font-size: 20px;
+    font-size: 18px;
+    padding-left: 20px;
+    
+}
+
+.box_right{
+    display: flex; 
+    flex-direction: row;
+    width: 80%;
+    gap: 20px;
 
 }
 
@@ -73,9 +73,9 @@ header a{
 }
 
 header a:hover {
-    color: #DB7093; /* 字体颜色变成蓝色 */
-    font-size: 22px; /* 字体大小稍微增大 */
-    font-weight: bold; /* 字体变粗 */
+    color: #DB7093; 
+    font-size: 22px; 
+    font-weight: bold; 
 }
 
 .sec-div {
