@@ -103,7 +103,7 @@ header a:hover {
     height: 100%;
     margin: 0px;
     gap:0;
-    padding-left: 25%;
+    padding-left: 15%;
     font-size: 20px;
     color: #DB7093;
     font-weight: bold;
@@ -112,8 +112,8 @@ header a:hover {
 .papper_div{
     height: 100%;
     gap:0;
-    padding-left: 25%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     margin-bottom: 50px;
 }
 
