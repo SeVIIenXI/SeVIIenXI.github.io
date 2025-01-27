@@ -37,7 +37,7 @@ header {
 }
 
 .box_left {
-    width: 22%;
+    width: 25%;
     height: 30px;
     color: #DB7093;
     display: flex;
@@ -61,7 +61,7 @@ header {
 .box_right{
     display: flex; 
     flex-direction: row;
-    width: 78%;
+    width: 75%;
     gap: 20px;
 
 }
