@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh-Ja">
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>金田ゼミHP</title>
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-      <header>
-        <div>
-            <div class="container">
-              <div class="box_left">学習院大学　金田ゼミ</div>
-              <div class="box_right">
-                <div class="box_top"><a  href="index.html">ホーム</a></div>
-                <div class="box_top"><a  href="professor.html">教授紹介</a></div>
-                <div class="box_top"><a  href="intro.html">ゼミ紹介</a></div>
-                <div class="box_top"><a  href="photo.html">アルバム</a></div>
-                <div class="box_top"><a  href="virtual.html">バーチャル投資</a></div>
-              </div>
-            </div>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <title>金田ゼミ</title>
 
-        </div>
-    </header>
+</head>
+<body>
 
-        <div class="sec_div">
-            <img src="Img/sakuma_vg_03_01.jpg" class="img">       
-        </div>
+<header>
+  <div class="container">
+    <div class="box_left">金田ゼミ</div>
 
-        
-       <div class="main_div">
+    <div class="box_right" id="navLinks">
+      <div class="box_top"><a href="index.html">ホーム</a></div>
+      <div class="box_top"><a href="professor.html">教授紹介</a></div>
+      <div class="box_top"><a href="intro.html">ゼミ紹介</a></div>
+      <div class="box_top"><a href="photo.html">アルバム</a></div>
+      <div class="box_top"><a href="virtual.html">バーチャル投資</a></div>
+    </div>
+
+    <!---->
+    <div class="menu-btn" id="menuBtn">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</header>
+
+<div class="sec_div">
+  <img src="Img/sakuma_vg_03_01.jpg" class="img">       
+</div>
+
+<div class="main_div">
 
          <div class="title_div">バーチャル投資とは</div>
          <div class="papper_div">
@@ -78,15 +84,21 @@
             </ul>
           </div>
 
-        </div>
+</div>
         
 
+<footer>
+  <p>&copy; 2025 Kaneda_zemi</p>
+</footer>
 
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
 
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 
- 
-        <footer>
-          <p>&copy; 2025 Kaneda_zemi</p>
-        </footer>
-    </body>
+</body>
 </html>
